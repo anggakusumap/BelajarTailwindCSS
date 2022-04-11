@@ -1,0 +1,10 @@
+/* @ itu adalah PostCSS */
+/* 
+    Base adalah untuk mereset semua style yang diberikan oleh Browser
+    Components adalah komponen seperti container, grid dll
+    Utilities adalah kelas utility yang akan digunakan
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
