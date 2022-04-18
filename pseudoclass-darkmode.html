@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClass & Dark Mode</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    spacing: {
+                        13: '3.25 rem'
+                    },
+                    fontFamily: {
+                        DancingScript: ['Dancing Script'],
+                        sILight: ['Shadows Into Light']
+                    },
+                    colors: {
+                        transparent: 'transparent',
+                        current: 'currentColor',
+                        'white': '#ffffff',
+                        'purple': '#3f3cbb',
+                        'midnight': '#121063',
+                        'metal': '#565584',
+                        'tahiti': '#3ab7bf',
+                        'silver': '#ecebff',
+                        'bubble-gum': '#ff77e9',
+                        'bermuda': '#78dcca',
+                        'ezv': '#ff7400'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 
+        Pseudo-classes, like :hover, :focus, :first-child, and :required
+        Pseudo-elements, like ::before, ::after, ::placeholder, and ::selection
+        Media queries, like responsive breakpoints, dark mode, and prefers-reduced-motion
+        Attribute selectors, like [dir="rtl"] and [open]
+    -->
+    
+    <button class="bg-sky-500 px-5 py-2 rounded-full text-white font-semibold block mt-2 mx-auto hover:bg-sky-600 active:bg-sky-900 focus:ring-4">
+        Save Changes
+    </button>
+</body>
+
+</html>

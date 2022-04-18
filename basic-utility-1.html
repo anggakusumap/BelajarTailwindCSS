@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Tailwind</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    spacing: {
+                        13: '3.25 rem'
+                    },
+                    fontFamily: {
+                        DancingScript: ['Dancing Script'],
+                        sILight: ['Shadows Into Light']
+                    },
+                    colors: {
+                        transparent: 'transparent',
+                        current: 'currentColor',
+                        'white': '#ffffff',
+                        'purple': '#3f3cbb',
+                        'midnight': '#121063',
+                        'metal': '#565584',
+                        'tahiti': '#3ab7bf',
+                        'silver': '#ecebff',
+                        'bubble-gum': '#ff77e9',
+                        'bermuda': '#78dcca',
+                        'ezv': '#ff7400'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2 class="text-center text-8xl font-semibold mb-5">Hello Genyol</h2>
+
+    <section class="mb-10">
+        <h2>Spacing</h2>
+        <div class="m-5 bg-gradient-to-r from-cyan-500 via-red-700 to-blue-500 text-slate-100">Margin</div>
+
+        <div class="text-5xl bg-gradient-to-r from-red-800 to-cyan-500 bg-clip-text text-transparent">Coba Masukin Warna Gradient</div>
+        <div class="p-12">Padding</div>
+    </section>
+
+    <section class="mb-10">
+        <h2>Sizing</h2>
+        <div>Kotak 2</div>
+    </section>
+
+    <section class="mb-96 ml-3 font-sans text-center">
+        <h2 class="mb-4 text-4xl font-bold italic">Belajar mengenai TypoGraphy pada TailwindCSS</h2>
+        <div class="mb-4">By <a href="#" class="font-bold text-amber-600">Angga Kusuma.</a></div>
+        <p class="mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae quis. Animi nobis
+            voluptate non eos saepe. Ab, voluptas velit. Sapiente ad deserunt facilis nesciunt similique dolore sit
+            doloremque dolor, unde repellendus suscipit possimus libero voluptate numquam accusamus soluta quo harum
+            quos repellat consectetur quisquam ex. Distinctio optio rem nulla?
+        </p>
+        <p class="italic">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt odit modi alias obcaecati
+            fuga, amet
+            provident culpa tempora laborum, nam illo quae libero nostrum, in mollitia consequuntur praesentium magnam!
+            <span class="text-green-600">Dignissimos.</span>
+        </p>
+    </section>
+</body>
+
+</html>
